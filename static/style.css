@@ -1,0 +1,87 @@
+/* Center everything */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #3fadd9; /* Change background color */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Button animation */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Select animation */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url('dropdown.png'); /* Add your arrow image path */
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* Header image */
+h1 {
+    background-image: url('car.png'); /* Add your header image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-media-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    color: #fff;
+}
