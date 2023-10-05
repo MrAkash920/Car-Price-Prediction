@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+<body>
+    <h1>Car Price Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="year">Year:</label>
+        <input type="number" name="year" required><br><br>
+
+        <label for="present_price">Present Price:</label>
+        <input type="number" step="0.01" name="present_price" required><br><br>
+
+        <label for="kms_driven">Kilometers Driven:</label>
+        <input type="number" name="kms_driven" required><br><br>
+
+        <label for="fuel_type">Fuel Type:</label>
+        <select name="fuel_type" required>
+            <option value="0">Petrol</option>
+            <option value="1">Diesel</option>
+            <option value="2">CNG</option>
+        </select><br><br>
+
+        <label for="seller_type">Seller Type:</label>
+        <select name="seller_type" required>
+            <option value="0">Dealer</option>
+            <option value="1">Individual</option>
+        </select><br><br>
+
+        <label for="transmission">Transmission:</label>
+        <select name="transmission" required>
+            <option value="0">Manual</option>
+            <option value="1">Automatic</option>
+        </select><br><br>
+
+        <label for="owner">Owner:</label>
+        <input type="number" name="owner" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <h2>{{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
