@@ -161,8 +161,3 @@ You can run this application in a Docker container. Here are the steps to contai
 ## Contributing
 
 Contributions are welcome! Fork the project, create your feature branch, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
