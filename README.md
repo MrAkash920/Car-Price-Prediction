@@ -73,11 +73,11 @@ Check out the live demo [here](your-heroku-app-url).
 
 You can run this application in a Docker container. Here are the steps to containerize and run the application using Docker:
 
-### Prerequisites
+## Prerequisites
 
 - [Docker](https://www.docker.com/) installed on your system.
 
-### Building the Docker Image
+## Building the Docker Image
 
 1. Clone this repository to your local machine:
 
@@ -126,7 +126,7 @@ You can run this application in a Docker container. Here are the steps to contai
    docker build -t car-price-prediction .
    ```
 
-### Running the Docker Container
+## Running the Docker Container
 
 5. Run the Docker container:
 
@@ -136,11 +136,11 @@ You can run this application in a Docker container. Here are the steps to contai
 
 6. Access the application in your web browser at [http://localhost:5000](http://localhost:5000).
 
-### Stopping the Container
+## Stopping the Container
 
 7. To stop the container, press `Ctrl+C` in the terminal where it's running.
 
-### Cleaning Up
+## Cleaning Up
 
 8. If you want to remove the container, use the following command:
 
@@ -148,10 +148,14 @@ You can run this application in a Docker container. Here are the steps to contai
    docker rm -f $(docker ps -aq)
    ```
 
-### Note
+## Note
 
 - Make sure you have Docker installed and running on your system before following these steps.
 
+
+## Docker Hub
+
+[Docker Hub](https://hub.docker.com/repositories/singhakashcu)
 
 
 ## Contributing
