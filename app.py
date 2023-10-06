@@ -39,5 +39,5 @@ def predict():
         return render_template('index.html', prediction=f'Predicted Price: {predicted_price[0]:.2f}')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(debug =False, host='0.0.0.0', port=8080)
 
