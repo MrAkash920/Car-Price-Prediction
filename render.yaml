@@ -1,7 +1,10 @@
 services:
-  - name: car-price-prediction-app
+  - name: Car-Price-Prediction
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     envVars:
       - key: PORT
         value: "8080"  # Use the port you want
+
+build:
+  name: python
